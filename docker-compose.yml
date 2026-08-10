@@ -1,0 +1,33 @@
+
+services:
+  dujiao-api:
+    image: dujiaonext/dujiao-next:latest
+    container_name: dujiao-api
+    restart: always
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - APP_DEBUG=true
+      - DB_TYPE=sqlite
+      - DB_DNS=/app/data/dujiao.db
+      - JWT_SECRET=53a36f08-9b04-4945-a278-d2c6345e764f  # ??????????????? JWT ???
+
+  dujiao-user:
+    image: dujiaonext/user:latest
+    container_name: dujiao-user
+    restart: always
+    ports:
+      - "8001:80"
+    environment:
+      - VITE_API_BASE_URL=http://localhost:8000
+
+  dujiao-admin:
+    image: dujiaonext/admin:latest
+    container_name: dujiao-admin
+    restart: always
+    ports:
+      - "8002:80"
+    environment:
+      - VITE_API_BASE_URL=http://localhost:8000
