@@ -1,0 +1,13 @@
+.vscode/
+config.yml
+.idea
+db
+uploads
+*.db
+*.log
+.env
+.DS_Store
+*/node_modules/
+*/dist/
+# Added by goreleaser init:
+dist/
