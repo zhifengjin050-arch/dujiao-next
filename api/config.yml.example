@@ -1,0 +1,138 @@
+# Dujiao-Next ????
+
+app:
+  secret_key: your-secret-key-change-in-production-please # ????,?? AES-256 ??????
+
+server:
+  host: 0.0.0.0
+  port: 8080
+  mode: debug  # debug ? release
+
+log:
+  dir: ""  # ???????????/logs
+  filename: app.log
+  max_size_mb: 100
+  max_backups: 7
+  max_age_days: 30
+  compress: true
+
+database:
+  driver: sqlite  # sqlite / postgres
+  dsn: ./db/dujiao.db
+  pool:
+    max_open_conns: 1
+    max_idle_conns: 1
+    conn_max_lifetime_seconds: 0  # 0 ?????
+    conn_max_idle_time_seconds: 0  # 0 ?????
+
+jwt:
+  secret: your-secret-key-change-in-production-please
+  expire_hours: 24  # Token ???(??)
+
+user_jwt:
+  secret: user-secret-key-change-in-production-please
+  expire_hours: 24  # ?? Token ???(??)
+  remember_me_expire_hours: 168  # ??? Token ???(??)
+
+bootstrap:
+  default_admin_username: ""  # ???????????(??)
+  default_admin_password: ""  # ??????????(??????)
+
+telegram_auth:
+  enabled: false
+  bot_username: ""  # Telegram Bot ???(?? @)
+  bot_token: ""     # Telegram Bot Token(??)
+  mini_app_url: ""  # Telegram Mini App ????(?? BotFather Web App URL ????)
+  login_expire_seconds: 300
+  replay_ttl_seconds: 300
+
+redis:
+  enabled: true
+  host: 127.0.0.1
+  port: 6379
+  password: ""
+  db: 0
+  prefix: "dj"
+
+queue:
+  enabled: true
+  host: 127.0.0.1
+  port: 6379
+  password: ""
+  db: 1
+  concurrency: 10
+  queues:
+    default: 10
+    critical: 5
+  upstream_sync_interval: "5m"  # ????????(? 1m?5m?10m)
+
+upload:
+  max_size: 10485760  # ????????(??,?? 10MB)
+  allowed_types:
+    - image/jpeg
+    - image/png
+    - image/gif
+    - image/webp
+    - image/svg+xml
+  allowed_extensions:
+    - .jpg
+    - .jpeg
+    - .png
+    - .gif
+    - .webp
+    - .svg
+  max_width: 4096
+  max_height: 4096
+
+cors:
+  allowed_origins:
+    - "*"
+  allowed_methods:
+    - GET
+    - POST
+    - PUT
+    - PATCH
+    - DELETE
+    - OPTIONS
+  allowed_headers:
+    - Content-Type
+    - Content-Length
+    - Accept-Encoding
+    - Authorization
+    - Cache-Control
+    - X-Requested-With
+    - X-CSRF-Token
+  allow_credentials: true
+  max_age: 600
+
+security:
+  login_rate_limit:
+    window_seconds: 300
+    max_attempts: 5
+    block_seconds: 900
+  password_policy:
+    min_length: 8
+    require_upper: true
+    require_lower: true
+    require_number: true
+    require_special: false
+
+email:
+  enabled: true
+  host: smtp.xxx.com
+  port: 465
+  username: your-username
+  password: your-password
+  from: your-email
+  from_name: your-name
+  use_tls: false
+  use_ssl: true
+  verify_code:
+    expire_minutes: 10
+    send_interval_seconds: 60
+    max_attempts: 5
+    length: 6
+
+order:
+  payment_expire_minutes: 15
+  max_refund_days: 30
