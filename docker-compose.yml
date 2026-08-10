@@ -1,4 +1,3 @@
-
 services:
   dujiao-api:
     image: dujiaonext/dujiao-next:latest
@@ -12,7 +11,7 @@ services:
       - APP_DEBUG=true
       - DB_TYPE=sqlite
       - DB_DNS=/app/data/dujiao.db
-      - JWT_SECRET=53a36f08-9b04-4945-a278-d2c6345e764f  # ??????????????? JWT ???
+      - JWT_SECRET=your-jwt-secret-change-in-production  # Please replace with a random key, e.g.: openssl rand -hex 32
 
   dujiao-user:
     image: dujiaonext/user:latest
