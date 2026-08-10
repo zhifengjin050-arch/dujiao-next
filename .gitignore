@@ -2,7 +2,7 @@
 # Dujiao-Next .gitignore
 # ============================================
 
-# --- 敏感配置文件 ---
+# --- ?????? ---
 config.yml
 *.env
 *.env.local
@@ -10,21 +10,21 @@ config.yml
 .env.*
 !.env.example
 
-# --- 数据库文件 ---
+# --- ????? ---
 *.db
 *.sqlite
 *.sqlite3
 db/
 
-# --- 日志文件 ---
+# --- ???? ---
 *.log
 logs/
 start.log
 
-# --- 上传文件 ---
+# --- ???? ---
 uploads/
 
-# --- 编译产物 ---
+# --- ???? ---
 *.exe
 *.test
 *.out
@@ -51,17 +51,17 @@ dist-ssr/
 *~
 .DS_Store
 
-# --- 操作系统 ---
+# --- ???? ---
 Thumbs.db
 ehthumbs.db
 Desktop.ini
 
-# --- 临时文件 ---
+# --- ???? ---
 tmp/
 temp/
 *.tmp
 
-# --- 部署脚本（含敏感信息） ---
+# --- ????(?????) ---
 deploy_to_server.py
 deploy.sh
 deploy2.sh
@@ -69,7 +69,7 @@ deploy_subdomains.sh
 fulfill_manual.sh
 fulfill_orders.sh
 
-# --- 测试/诊断脚本 ---
+# --- ??/???? ---
 check_*.py
 check_*.sql
 check_*.go
