@@ -1,0 +1,87 @@
+# ============================================
+# Dujiao-Next .gitignore
+# ============================================
+
+# --- 敏感配置文件 ---
+config.yml
+*.env
+*.env.local
+*.env.production
+.env.*
+!.env.example
+
+# --- 数据库文件 ---
+*.db
+*.sqlite
+*.sqlite3
+db/
+
+# --- 日志文件 ---
+*.log
+logs/
+start.log
+
+# --- 上传文件 ---
+uploads/
+
+# --- 编译产物 ---
+*.exe
+*.test
+*.out
+dujiao-api-linux
+dujiao-api-test.exe
+dujiao-api.exe
+dujiao-next.exe
+
+# --- Go ---
+api/vendor/
+api/dist/
+
+# --- Node ---
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# --- 操作系统 ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- 临时文件 ---
+tmp/
+temp/
+*.tmp
+
+# --- 部署脚本（含敏感信息） ---
+deploy_to_server.py
+deploy.sh
+deploy2.sh
+deploy_subdomains.sh
+fulfill_manual.sh
+fulfill_orders.sh
+
+# --- 测试/诊断脚本 ---
+check_*.py
+check_*.sql
+check_*.go
+diagnose_*.py
+test_*.py
+test_*.go
+verify_*.py
+update_*.py
+fix_*.py
+fix_*.go
+add_*.py
+create_*.py
+restore_*.py
+trigger_*.py
+*.html
