@@ -1,7 +1,9 @@
-![虚拟商品交易与自动发货](docs/showcase/cover.svg)
+<picture><source media="(prefers-color-scheme: dark)" srcset="docs/showcase/hero-dark.svg"><source media="(prefers-color-scheme: light)" srcset="docs/showcase/hero-light.svg"><img src="docs/showcase/hero-light.svg" alt="Dujiao-Next · 虚拟商品交易与自动发货" width="100%"></picture>
 
 <!-- engineering-guide:start -->
-## 🧭 工程导读 · 从场景到实现
+<a id="-工程导读--从场景到实现"></a>
+<h2><picture><source media="(prefers-color-scheme: dark)" srcset="docs/showcase/section-01-dark.svg"><source media="(prefers-color-scheme: light)" srcset="docs/showcase/section-01-light.svg"><img src="docs/showcase/section-01-light.svg" alt="工程导读 · 从场景到实现" width="100%"></picture></h2>
+
 
 **从下单到交付的全栈业务链路**。面向虚拟商品交易，将用户前台、管理后台与 Go API 连接到商品、订单、支付和发货流程。
 
@@ -24,7 +26,9 @@ flowchart LR
 
 
 
-## ✨ 项目速览
+<a id="-项目速览"></a>
+<h2><picture><source media="(prefers-color-scheme: dark)" srcset="docs/showcase/section-02-dark.svg"><source media="(prefers-color-scheme: light)" srcset="docs/showcase/section-02-light.svg"><img src="docs/showcase/section-02-light.svg" alt="项目速览" width="100%"></picture></h2>
+
 
 - 围绕商品、订单、支付与发货组织业务功能，连接用户前台、管理后台与后端服务。
 - 通过不同 API 入口组织用户、管理端与渠道能力，配套鉴权与配置管理。
@@ -68,7 +72,9 @@ flowchart LR
 
 ---
 
-## 📖 目录
+<a id="-目录"></a>
+<h2><picture><source media="(prefers-color-scheme: dark)" srcset="docs/showcase/section-03-dark.svg"><source media="(prefers-color-scheme: light)" srcset="docs/showcase/section-03-light.svg"><img src="docs/showcase/section-03-light.svg" alt="目录" width="100%"></picture></h2>
+
 
 - [项目背景](#-项目背景)
 - [功能特性](#-功能特性)
@@ -84,7 +90,9 @@ flowchart LR
 - [贡献指南](#-贡献指南)
 - [许可证](#-许可证)
 
-## 🎯 项目背景
+<a id="-项目背景"></a>
+<h2><picture><source media="(prefers-color-scheme: dark)" srcset="docs/showcase/section-04-dark.svg"><source media="(prefers-color-scheme: light)" srcset="docs/showcase/section-04-light.svg"><img src="docs/showcase/section-04-light.svg" alt="项目背景" width="100%"></picture></h2>
+
 
 Dujiao-Next 是一个面向虚拟商品交易的现代化自动发货系统。在数字经济时代，虚拟商品（如卡密、激活码、在线服务等）的交易需求日益增长，但传统电商平台在虚拟商品处理、自动发货、多渠道支付集成等方面存在明显不足。
 
@@ -104,7 +112,9 @@ Dujiao-Next 是一个面向虚拟商品交易的现代化自动发货系统。�
 - **多语言国际化**：内置中英文支持，可扩展更多语言
 - **模块化架构**：清晰的分层设计，便于二次开发和维护
 
-## ✨ 功能特性
+<a id="-功能特性"></a>
+<h2><picture><source media="(prefers-color-scheme: dark)" srcset="docs/showcase/section-05-dark.svg"><source media="(prefers-color-scheme: light)" srcset="docs/showcase/section-05-light.svg"><img src="docs/showcase/section-05-light.svg" alt="功能特性" width="100%"></picture></h2>
+
 
 ### 🏪 核心业务
 
@@ -153,7 +163,9 @@ Dujiao-Next 是一个面向虚拟商品交易的现代化自动发货系统。�
 | 异步任务 | 基于 Redis 的异步队列，支持上游同步 |
 | 图片处理 | 图片上传、尺寸限制、格式校验 |
 
-## 🏗 技术架构
+<a id="-技术架构"></a>
+<h2><picture><source media="(prefers-color-scheme: dark)" srcset="docs/showcase/section-06-dark.svg"><source media="(prefers-color-scheme: light)" srcset="docs/showcase/section-06-light.svg"><img src="docs/showcase/section-06-light.svg" alt="技术架构" width="100%"></picture></h2>
+
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -194,7 +206,9 @@ Dujiao-Next 是一个面向虚拟商品交易的现代化自动发货系统。�
 | **国际化** | vue-i18n / go-i18n | 前后端完整国际化 |
 | **富文本** | TipTap | 基于 ProseMirror 的现代编辑器 |
 
-## 📁 项目结构
+<a id="-项目结构"></a>
+<h2><picture><source media="(prefers-color-scheme: dark)" srcset="docs/showcase/section-07-dark.svg"><source media="(prefers-color-scheme: light)" srcset="docs/showcase/section-07-light.svg"><img src="docs/showcase/section-07-light.svg" alt="项目结构" width="100%"></picture></h2>
+
 
 ```
 dujiao-next/
@@ -294,7 +308,9 @@ dujiao-next/
 └── CHANGELOG.md                  # 更新日志
 ```
 
-## 📸 界面预览
+<a id="-界面预览"></a>
+<h2><picture><source media="(prefers-color-scheme: dark)" srcset="docs/showcase/section-08-dark.svg"><source media="(prefers-color-scheme: light)" srcset="docs/showcase/section-08-light.svg"><img src="docs/showcase/section-08-light.svg" alt="界面预览" width="100%"></picture></h2>
+
 
 > 以下为系统主要界面截图，展示核心功能模块。
 
@@ -309,7 +325,9 @@ dujiao-next/
 
 > *提示：请将实际截图放入 `docs/screenshots/` 目录，并更新此表格中的图片链接。*
 
-## 🚀 快速开始
+<a id="-快速开始"></a>
+<h2><picture><source media="(prefers-color-scheme: dark)" srcset="docs/showcase/section-09-dark.svg"><source media="(prefers-color-scheme: light)" srcset="docs/showcase/section-09-light.svg"><img src="docs/showcase/section-09-light.svg" alt="快速开始" width="100%"></picture></h2>
+
 
 ### 环境要求
 
@@ -386,7 +404,9 @@ npm run dev
 | 管理后台 | http://localhost:5174 | 管理员登录后台 |
 | 用户前台 | http://localhost:5173 | 用户商城前台 |
 
-## 📦 部署指南
+<a id="-部署指南"></a>
+<h2><picture><source media="(prefers-color-scheme: dark)" srcset="docs/showcase/section-10-dark.svg"><source media="(prefers-color-scheme: light)" srcset="docs/showcase/section-10-light.svg"><img src="docs/showcase/section-10-light.svg" alt="部署指南" width="100%"></picture></h2>
+
 
 ### Docker 部署（推荐）
 
@@ -499,7 +519,9 @@ cp api/config.yml.example api/config.yml
 # - queue.enabled: 开启
 ```
 
-## ⚙️ 配置说明
+<a id="-配置说明"></a>
+<h2><picture><source media="(prefers-color-scheme: dark)" srcset="docs/showcase/section-11-dark.svg"><source media="(prefers-color-scheme: light)" srcset="docs/showcase/section-11-light.svg"><img src="docs/showcase/section-11-light.svg" alt="配置说明" width="100%"></picture></h2>
+
 
 项目使用 YAML 配置文件，完整配置项参见 [api/config.yml.example](api/config.yml.example)。
 
@@ -544,7 +566,9 @@ cp admin/.env.example admin/.env
 cp user/.env.example user/.env
 ```
 
-## 📡 API 文档
+<a id="-api-文档"></a>
+<h2><picture><source media="(prefers-color-scheme: dark)" srcset="docs/showcase/section-12-dark.svg"><source media="(prefers-color-scheme: light)" srcset="docs/showcase/section-12-light.svg"><img src="docs/showcase/section-12-light.svg" alt="API 文档" width="100%"></picture></h2>
+
 
 ### API 概述
 
@@ -593,7 +617,9 @@ cp user/.env.example user/.env
 curl http://localhost:8080/health
 ```
 
-## 💳 支付渠道
+<a id="-支付渠道"></a>
+<h2><picture><source media="(prefers-color-scheme: dark)" srcset="docs/showcase/section-13-dark.svg"><source media="(prefers-color-scheme: light)" srcset="docs/showcase/section-13-light.svg"><img src="docs/showcase/section-13-light.svg" alt="支付渠道" width="100%"></picture></h2>
+
 
 | 支付渠道 | 提供者 | 支持状态 | 说明 |
 |---------|--------|---------|------|
@@ -607,7 +633,9 @@ curl http://localhost:8080/health
 | TokenPay | `tokenpay` | ✅ 支持 | 多链支付 |
 | OKPay | `okpay` | ✅ 支持 | 虚拟货币支付 |
 
-## 🔒 安全特性
+<a id="-安全特性"></a>
+<h2><picture><source media="(prefers-color-scheme: dark)" srcset="docs/showcase/section-14-dark.svg"><source media="(prefers-color-scheme: light)" srcset="docs/showcase/section-14-light.svg"><img src="docs/showcase/section-14-light.svg" alt="安全特性" width="100%"></picture></h2>
+
 
 - **JWT 双令牌体系**：管理员和用户独立的 JWT 密钥和过期策略
 - **登录限流**：基于 IP + 邮箱的多维度登录频率限制，防止暴力破解
@@ -619,7 +647,9 @@ curl http://localhost:8080/health
 - **敏感信息分离**：所有密钥和凭证通过配置文件管理，不硬编码
 - **配置文件保护**：`.gitignore` 排除 `config.yml` 和 `.env` 文件，仅提供 `.example` 模板
 
-## ❓ 常见问题
+<a id="-常见问题"></a>
+<h2><picture><source media="(prefers-color-scheme: dark)" srcset="docs/showcase/section-15-dark.svg"><source media="(prefers-color-scheme: light)" srcset="docs/showcase/section-15-light.svg"><img src="docs/showcase/section-15-light.svg" alt="常见问题" width="100%"></picture></h2>
+
 
 <details>
 <summary><b>1. 启动时提示 "config.yml not found"</b></summary>
@@ -667,7 +697,9 @@ environment:
 4. 在管理后台添加支付配置
 </details>
 
-## 🤝 贡献指南
+<a id="-贡献指南"></a>
+<h2><picture><source media="(prefers-color-scheme: dark)" srcset="docs/showcase/section-16-dark.svg"><source media="(prefers-color-scheme: light)" srcset="docs/showcase/section-16-light.svg"><img src="docs/showcase/section-16-light.svg" alt="贡献指南" width="100%"></picture></h2>
+
 
 我们欢迎任何形式的贡献！请阅读 [CONTRIBUTING.md](CONTRIBUTING.md) 了解详细的贡献流程和规范。
 
@@ -683,7 +715,9 @@ environment:
 
 本项目遵循 [Contributor Covenant 行为准则](CODE_OF_CONDUCT.md)。参与即表示您同意遵守其条款。
 
-## 📄 许可证
+<a id="-许可证"></a>
+<h2><picture><source media="(prefers-color-scheme: dark)" srcset="docs/showcase/section-17-dark.svg"><source media="(prefers-color-scheme: light)" srcset="docs/showcase/section-17-light.svg"><img src="docs/showcase/section-17-light.svg" alt="许可证" width="100%"></picture></h2>
+
 
 本项目基于 [MIT License](LICENSE) 开源。
 

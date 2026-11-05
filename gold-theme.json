@@ -1,0 +1,93 @@
+{
+  "title": "Dujiao-Next",
+  "subtitle": "虚拟商品交易与自动发货",
+  "stack": "Go · Vue 3 · TypeScript · Payments",
+  "repository": "zhifengjin050-arch/dujiao-next",
+  "sections": [
+    {
+      "id": "section-01",
+      "title": "工程导读 · 从场景到实现",
+      "caption": "01 / PROJECT DOCUMENTATION"
+    },
+    {
+      "id": "section-02",
+      "title": "项目速览",
+      "caption": "02 / PROJECT DOCUMENTATION"
+    },
+    {
+      "id": "section-03",
+      "title": "目录",
+      "caption": "03 / PROJECT DOCUMENTATION"
+    },
+    {
+      "id": "section-04",
+      "title": "项目背景",
+      "caption": "04 / PROJECT DOCUMENTATION"
+    },
+    {
+      "id": "section-05",
+      "title": "功能特性",
+      "caption": "05 / PROJECT DOCUMENTATION"
+    },
+    {
+      "id": "section-06",
+      "title": "技术架构",
+      "caption": "06 / PROJECT DOCUMENTATION"
+    },
+    {
+      "id": "section-07",
+      "title": "项目结构",
+      "caption": "07 / PROJECT DOCUMENTATION"
+    },
+    {
+      "id": "section-08",
+      "title": "界面预览",
+      "caption": "08 / PROJECT DOCUMENTATION"
+    },
+    {
+      "id": "section-09",
+      "title": "快速开始",
+      "caption": "09 / PROJECT DOCUMENTATION"
+    },
+    {
+      "id": "section-10",
+      "title": "部署指南",
+      "caption": "10 / PROJECT DOCUMENTATION"
+    },
+    {
+      "id": "section-11",
+      "title": "配置说明",
+      "caption": "11 / PROJECT DOCUMENTATION"
+    },
+    {
+      "id": "section-12",
+      "title": "API 文档",
+      "caption": "12 / PROJECT DOCUMENTATION"
+    },
+    {
+      "id": "section-13",
+      "title": "支付渠道",
+      "caption": "13 / PROJECT DOCUMENTATION"
+    },
+    {
+      "id": "section-14",
+      "title": "安全特性",
+      "caption": "14 / PROJECT DOCUMENTATION"
+    },
+    {
+      "id": "section-15",
+      "title": "常见问题",
+      "caption": "15 / PROJECT DOCUMENTATION"
+    },
+    {
+      "id": "section-16",
+      "title": "贡献指南",
+      "caption": "16 / PROJECT DOCUMENTATION"
+    },
+    {
+      "id": "section-17",
+      "title": "许可证",
+      "caption": "17 / PROJECT DOCUMENTATION"
+    }
+  ]
+}
